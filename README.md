@@ -27,7 +27,7 @@ First you have to place your Sql Scripts in the proper directory:
 * Migrations
 * PostDeployment
 
-__This is IMPORTANT!__: Only the scripts placed in the Migrations folder are saved in the journal table. The scripts placed in both Pre andPost deployment directories are executed everytime the application runs. So be carefull what scripts do you place in those directories.
+__This is IMPORTANT!__: Only the scripts placed in the Migrations directory are saved in the journal table. The scripts placed in both Pre and Post deployment directories are executed everytime the application runs. So be carefull what scripts do you place in those directories.
 
 Once you place the scripts, just run the application.
 
