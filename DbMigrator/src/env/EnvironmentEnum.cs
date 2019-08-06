@@ -5,6 +5,9 @@ using System.Reflection;
 
 namespace DbUpTemplate.src.env
 {
+    /// <summary>
+    /// Typesafe enum to check the environment.
+    /// </summary>
     internal sealed class EnvironmentEnum
     {
         public static EnvironmentEnum Development { get; } = new EnvironmentEnum("Development");
@@ -19,6 +22,14 @@ namespace DbUpTemplate.src.env
 
         public override string ToString() => Name;
 
+        /// <summary>
+        /// Determines whether this instance contains the object.
+        /// </summary>
+        /// <param name="environment">The environment as an string.</param>
+        /// <returns>
+        ///   <c>true</c> if [contains] [the specified environment]; otherwise, <c>false</c>.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">environment</exception>
         public static bool Contains(string environment)
         {
             if (String.IsNullOrWhiteSpace(environment))

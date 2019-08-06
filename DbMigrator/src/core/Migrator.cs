@@ -9,10 +9,19 @@ namespace DbMigrator.src.core
 {
     internal class Migrator
     {
+        /// <summary>
+        /// The logger.
+        /// </summary>
         private readonly ILogger _logger;
 
+        /// <summary>
+        /// The connection string.
+        /// </summary>
         private readonly string _connectionString;
 
+        /// <summary>
+        /// The script location in the filesystem.
+        /// </summary>
         private readonly string _scriptLocation;
 
         public Migrator(ILogger logger, string connectionStirng, string scriptLocation)
@@ -22,6 +31,12 @@ namespace DbMigrator.src.core
             _scriptLocation = scriptLocation ?? throw new ArgumentNullException(nameof(scriptLocation));
         }
 
+        /// <summary>
+        /// Runs the specified command.
+        /// </summary>
+        /// <param name="command">The command enterd as an argument.</param>
+        /// <returns>Returns 1 if something went wrong or 0 if the execution was successful</returns>
+        /// <exception cref="ArgumentNullException">command</exception>
         public int Run(string command)
         {
             if (string.IsNullOrWhiteSpace(command))
