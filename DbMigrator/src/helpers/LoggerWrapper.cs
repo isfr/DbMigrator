@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DbUp.Engine.Output;
+﻿using DbUp.Engine.Output;
 using Microsoft.Extensions.Logging;
 
 namespace DbMigrator.src.helpers

@@ -3,8 +3,6 @@
 using DbMigrator.src.exceptions;
 using DbMigrator.src.helpers;
 using DbUp;
-using DbUp.Engine;
-using DbUp.Helpers;
 using DbUp.ScriptProviders;
 using Microsoft.Extensions.Logging;
 

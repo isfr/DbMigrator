@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 using DbUp.Builder;
 using DbUp.Helpers;
 using Microsoft.Extensions.Logging;

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 using DbMigrator.src.consts;
 using DbMigrator.src.core.commands;
-using DbUp.Helpers;
 using Microsoft.Extensions.Logging;
 
 namespace DbMigrator.src.core
